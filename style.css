@@ -1,0 +1,79 @@
+:root {
+    --main-font: "Alice", serif;
+    --text-color-primary: #291B1A;
+    --text-color-secundary: #573A37;
+    --text-color-on-bg: #F0E8C2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* color é a cor do texto */
+body {
+    font-family: var(--main-font);
+    color: var(--text-color-primary);
+    background-image: url(assets/bg-image.jpg);
+    background-size: cover;
+}
+
+#page {
+    box-sizing: border-box;
+    /*O box-sizing no CSS define como o tamanho total de um elemento (largura e altura) é calculado: se inclui ou não as bordas e o preenchimento (padding).*/
+    width: 800px;
+    margin: 3rem auto 1.75rem; /* 48px auto 100px */
+    /* Short hand Top right bottom left */
+    background-color: var(--text-color-on-bg);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+}
+
+img {
+    border-radius: 1rem;
+}
+
+main {
+    padding: 1.5rem;
+}
+
+p {
+    color: var(--text-color-secundary);
+}
+
+
+/* Um elemento que possui o mesmo elemento anterior a ele. */
+section + section {
+    margin-top: 1.5rem;
+}
+
+#about p + p {
+    margin-top: 0.75rem;
+}
+
+h1{
+    line-height: 140%;
+    font-size: 2.5rem;
+    margin-bottom: 0.25rem;
+}
+
+h2 {
+    line-height: 150%;
+    font-size: 1.5;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+footer {
+    color: var(--text-color-secundary);
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+footer img {
+    vertical-align: middle;
+}
